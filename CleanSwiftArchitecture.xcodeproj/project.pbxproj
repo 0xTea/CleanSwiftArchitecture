@@ -14,6 +14,12 @@
 		A363C8431F30627900E689E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A363C8411F30627900E689E6 /* LaunchScreen.storyboard */; };
 		A363C84E1F30627A00E689E6 /* CleanSwiftArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C84D1F30627A00E689E6 /* CleanSwiftArchitectureTests.swift */; };
 		A363C8591F30627A00E689E6 /* CleanSwiftArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C8581F30627A00E689E6 /* CleanSwiftArchitectureUITests.swift */; };
+		A363C86E1F30656D00E689E6 /* CreateOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C8681F30656D00E689E6 /* CreateOrderInteractor.swift */; };
+		A363C86F1F30656D00E689E6 /* CreateOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C8691F30656D00E689E6 /* CreateOrderModels.swift */; };
+		A363C8701F30656D00E689E6 /* CreateOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C86A1F30656D00E689E6 /* CreateOrderPresenter.swift */; };
+		A363C8711F30656D00E689E6 /* CreateOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C86B1F30656D00E689E6 /* CreateOrderRouter.swift */; };
+		A363C8721F30656D00E689E6 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C86C1F30656D00E689E6 /* CreateOrderViewController.swift */; };
+		A363C8731F30656D00E689E6 /* CreateOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363C86D1F30656D00E689E6 /* CreateOrderWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		A363C8541F30627A00E689E6 /* CleanSwiftArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSwiftArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A363C8581F30627A00E689E6 /* CleanSwiftArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftArchitectureUITests.swift; sourceTree = "<group>"; };
 		A363C85A1F30627A00E689E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A363C8681F30656D00E689E6 /* CreateOrderInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderInteractor.swift; sourceTree = "<group>"; };
+		A363C8691F30656D00E689E6 /* CreateOrderModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderModels.swift; sourceTree = "<group>"; };
+		A363C86A1F30656D00E689E6 /* CreateOrderPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderPresenter.swift; sourceTree = "<group>"; };
+		A363C86B1F30656D00E689E6 /* CreateOrderRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderRouter.swift; sourceTree = "<group>"; };
+		A363C86C1F30656D00E689E6 /* CreateOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
+		A363C86D1F30656D00E689E6 /* CreateOrderWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		A363C8371F30627800E689E6 /* CleanSwiftArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				A363C8661F3062AB00E689E6 /* Scenes */,
 				A363C8381F30627800E689E6 /* AppDelegate.swift */,
 				A363C83A1F30627800E689E6 /* ViewController.swift */,
 				A363C83C1F30627900E689E6 /* Main.storyboard */,
@@ -123,6 +136,27 @@
 				A363C85A1F30627A00E689E6 /* Info.plist */,
 			);
 			path = CleanSwiftArchitectureUITests;
+			sourceTree = "<group>";
+		};
+		A363C8661F3062AB00E689E6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A363C8671F3062B300E689E6 /* CreateOrder */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		A363C8671F3062B300E689E6 /* CreateOrder */ = {
+			isa = PBXGroup;
+			children = (
+				A363C8681F30656D00E689E6 /* CreateOrderInteractor.swift */,
+				A363C8691F30656D00E689E6 /* CreateOrderModels.swift */,
+				A363C86A1F30656D00E689E6 /* CreateOrderPresenter.swift */,
+				A363C86B1F30656D00E689E6 /* CreateOrderRouter.swift */,
+				A363C86C1F30656D00E689E6 /* CreateOrderViewController.swift */,
+				A363C86D1F30656D00E689E6 /* CreateOrderWorker.swift */,
+			);
+			name = CreateOrder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +227,7 @@
 				TargetAttributes = {
 					A363C8341F30627800E689E6 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = X7CQMJR7WJ;
 						ProvisioningStyle = Automatic;
 					};
 					A363C8481F30627900E689E6 = {
@@ -259,8 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A363C8701F30656D00E689E6 /* CreateOrderPresenter.swift in Sources */,
 				A363C83B1F30627800E689E6 /* ViewController.swift in Sources */,
+				A363C8721F30656D00E689E6 /* CreateOrderViewController.swift in Sources */,
 				A363C8391F30627800E689E6 /* AppDelegate.swift in Sources */,
+				A363C8731F30656D00E689E6 /* CreateOrderWorker.swift in Sources */,
+				A363C86F1F30656D00E689E6 /* CreateOrderModels.swift in Sources */,
+				A363C86E1F30656D00E689E6 /* CreateOrderInteractor.swift in Sources */,
+				A363C8711F30656D00E689E6 /* CreateOrderRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X7CQMJR7WJ;
 				INFOPLIST_FILE = CleanSwiftArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tshepo.CleanSwiftArchitecture;
@@ -424,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X7CQMJR7WJ;
 				INFOPLIST_FILE = CleanSwiftArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tshepo.CleanSwiftArchitecture;
