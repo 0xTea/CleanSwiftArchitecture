@@ -19,23 +19,24 @@ protocol CreateOrderBusinessLogic
 
 protocol CreateOrderDataStore
 {
-  //var name: String { get set }
+  var value: Double { get set }
 }
 
 class CreateOrderInteractor: CreateOrderBusinessLogic, CreateOrderDataStore
 {
   var presenter: CreateOrderPresentationLogic?
   var worker: CreateOrderWorker?
-  //var name: String = ""
+  var value: Double = 0
   
   // MARK: Do something
   
   func doSomething(request: CreateOrder.Something.Request)
   {
+    value = request.multiply
     worker = CreateOrderWorker()
-    worker?.doSomeWork()
+    let newworkedvalue =  worker?.Square(value:value)
     
-    let response = CreateOrder.Something.Response()
+    let response = CreateOrder.Something.Response(nextlevel:newworkedvalue!)
     presenter?.presentSomething(response: response)
   }
 }

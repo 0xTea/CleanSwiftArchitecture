@@ -14,7 +14,12 @@ import UIKit
 
 class CreateOrderWorker
 {
-  func doSomeWork()
+    func Square(value :Double)->Double
   {
+     return value * value
   }
+    func Double(value :Double)->Double
+    {
+        return value+value
+    }
 }

@@ -20,12 +20,15 @@ enum CreateOrder
   {
     struct Request
     {
+        var multiply:Double
     }
     struct Response
     {
+         var nextlevel:Double
     }
     struct ViewModel
     {
+        var newvalue:Double
     }
   }
 }

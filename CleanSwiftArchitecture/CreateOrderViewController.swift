@@ -74,16 +74,17 @@ class CreateOrderViewController: UIViewController, CreateOrderDisplayLogic
   
   // MARK: Do something
   
-  //@IBOutlet weak var nameTextField: UITextField!
+  @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var valuetxtfield: UILabel!
   
   func doSomething()
   {
-    let request = CreateOrder.Something.Request()
+    let request = CreateOrder.Something.Request(multiply:12.09)
     interactor?.doSomething(request: request)
   }
   
   func displaySomething(viewModel: CreateOrder.Something.ViewModel)
   {
-    //nameTextField.text = viewModel.name
+    valuetxtfield.text = String(viewModel.newvalue)
   }
 }
