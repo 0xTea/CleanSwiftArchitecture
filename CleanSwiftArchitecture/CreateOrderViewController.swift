@@ -69,7 +69,7 @@ class CreateOrderViewController: UIViewController, CreateOrderDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    doSomething()
+    dodouble()
   }
   
   // MARK: Do something
@@ -80,11 +80,18 @@ class CreateOrderViewController: UIViewController, CreateOrderDisplayLogic
   func doSomething()
   {
     let request = CreateOrder.Something.Request(multiply:12.09)
-    interactor?.doSomething(request: request)
+    interactor?.domultiply(request: request)
   }
   
   func displaySomething(viewModel: CreateOrder.Something.ViewModel)
   {
     valuetxtfield.text = String(viewModel.newvalue)
   }
+    
+    func dodouble()
+    {
+        let request = CreateOrder.Something.Request(multiply:12.09)
+        interactor?.makedouble(request: request)
+    }
+    
 }

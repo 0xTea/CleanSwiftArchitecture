@@ -28,10 +28,14 @@ class CreateOrderPresenter: CreateOrderPresentationLogic
     
     var roundedvalue = response.nextlevel
     
-    let viewModel = CreateOrder.Something.ViewModel(newvalue:roundedvalue.roundToPlaces(2)) // presentation of a value
+    let viewModel = CreateOrder.Something.ViewModel(newvalue:roundedvalue.roundToPlaces(2))
+    // presentation of a value
 
     viewController?.displaySomething(viewModel: viewModel)
   }
+    
+    
+    
     
 }
 extension Double {
