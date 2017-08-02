@@ -48,7 +48,7 @@ class CreateOrderInteractor: CreateOrderBusinessLogic, CreateOrderDataStore
     
     func makedouble(request: CreateOrder.Something.Request) {
         
-        let doublevalue  = request.multiply // request parameter for worker
+        let doublevalue  = request.multiply // request parameter for worker from request 
         worker = CreateOrderWorker()  // worker started
         
         let newdouledvalue = worker?.Double(value: doublevalue) // work is completed by worker
